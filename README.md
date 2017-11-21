@@ -69,7 +69,16 @@ Example: (01772) 201201, +44 (0)1772 201201
  
 `Hint: It's obvious, but just to spell it out: For this question, you should think about different ways of writing down a phone number. It's not about trying to come up with as many phone number as you can.`
 
-**Answer:** \+?\d{1,}?\s?\(?\d{1,}\)?\s?\d{3,}\s?
+**Answer:** 
+(01772) 201201
++44 (0)1772 201201
+0161 865 1514
+01942 375241
+01942 817470
+01204 62064   
+01618651514
+020 5145 215
+02018488745
 
 
 #### Question 4b
@@ -78,4 +87,4 @@ Find a regular expression that matches all of the different phone number formats
  
 `Hint: Unless the way your regular expression works is obvious, please explain how it works.`
 
-**Answer:** Replace this text with your answer.
+**Answer:** \+?\d{1,}?\s?\(?\d{1,}\)?\s?\d{3,}\s?
