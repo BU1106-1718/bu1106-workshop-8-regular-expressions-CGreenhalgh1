@@ -41,7 +41,7 @@ Find a regular expression that will match a student number.
 `Hint: The numbers are (obviously) different for different students, so finding a regular expression that only matches this one student number is not enough. 
 Unless the way your regular expression works is obvious, please explain how it works.`
 
-**Answer:** [(G)]([a{2}])([a{0}])([a{5}])([a{8}])([a{8}])([a{7}])([a{0}])([a{0}]).
+**Answer:** [(G)]\d\d\d\d\d\d\d\d
 
 #### Question 2
 
