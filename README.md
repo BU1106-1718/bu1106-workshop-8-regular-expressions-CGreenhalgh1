@@ -41,7 +41,10 @@ Find a regular expression that will match a student number.
 `Hint: The numbers are (obviously) different for different students, so finding a regular expression that only matches this one student number is not enough. 
 Unless the way your regular expression works is obvious, please explain how it works.`
 
-**Answer:** [(G)]\d{8}
+**Answer:** `[(G)]\d{8}`
+
+`[(G)] Specified Capital G `
+`\d{8} specifies exactly 8 digits `
 
 #### Question 2
 
@@ -50,7 +53,10 @@ Find a regular expression that will match a student number, based on the additio
  
 `Hint: Unless the way your regular expression works is obvious, please explain how it works, e.g. this here will match the character and that here makes sure it also works if there is no character in front of the number.`
 
-**Answer:** [(Gg\s)]\d\d\d\d\d\d\d\d
+**Answer:** `[(Gg\s)]\d{8}`
+
+`[(Gg\s)] specifies capital G, lower case g, or space `
+`\d{8} specifies 8 digits `
 
 #### Question 3
 
@@ -59,7 +65,11 @@ Find a regular expression that will match a student number, based on the additio
  
 `Hint: Unless the way your regular expression works is obvious, please explain how it works.`
 
-**Answer:** [(A-Za-z\s)]\d\d\d\d\d\d\d\d.
+**Answer:**`[(A-Za-z\s)]\d{8}`
+
+`[(A-Za-z\s)] specifies any caps letter between A-Z, any lower case letter between a-z or a space`
+`\d{8} specifies 8 digits `
+
 
 #### Question 4a
 
@@ -70,7 +80,7 @@ Example: (01772) 201201, +44 (0)1772 201201
 `Hint: It's obvious, but just to spell it out: For this question, you should think about different ways of writing down a phone number. It's not about trying to come up with as many phone number as you can.`
 
 **Answer:** 
-(01772) 201201
+`(01772) 201201
 +44 (0)1772 201201
 0161 865 1514
 01942 375241
@@ -78,7 +88,7 @@ Example: (01772) 201201, +44 (0)1772 201201
 01204 62064   
 01618651514
 020 5145 215
-02018488745
+02018488745`
 
 
 #### Question 4b
@@ -87,4 +97,15 @@ Find a regular expression that matches all of the different phone number formats
  
 `Hint: Unless the way your regular expression works is obvious, please explain how it works.`
 
-**Answer:** \+?\d{1,}?\s?\(?\d{1,}\)?\s?\d{3,}\s?
+**Answer:**` \+?\d{1,}?\s?\(?\d{1,}\)?\s?\d{3,}\s?`
+
+`\+? is + or not`
+`\d{1,}? is atleast 1 digit or not`
+`\s? is a space or not`
+`\(? is open bracket or not`
+`\d{1,} is atleast 1 digit`
+`\)? is close bracket or not`
+`\s? is space or not`
+`\d{3,} is atleast 3 digits `
+`\s? is a space or not`
+
